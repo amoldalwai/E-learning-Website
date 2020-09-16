@@ -1,0 +1,102 @@
+header{
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #357F9C;
+    overflow: hidden;
+}
+
+
+header h1{
+    float: left;
+    font: normal 24px/1.5 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+header a{
+    color:#fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color:#F05283;
+
+}
+
+ul {
+    list-style: none;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+ul a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: left;
+    background-color: #BCB8C2;
+    padding: 10px 16px;
+    border-radius: 2px;
+    opacity: 0.8;
+    font-size: 16px;
+    display: inline-block;
+    margin: 4px;
+    line-height: 1;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+ul li a.active{
+    background-color: #F05283;
+    pointer-events: none;
+}
+
+ul li a:hover {
+    opacity: 1;
+}
+
+
+ul li{
+    display: inline-block;
+}
+
+
+@media (max-width: 1000px) {
+
+
+    header h1{
+        float: none;
+    }
+
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+
+}
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+    #bsaHolder{ display:none;}
+}
+
+/* -- Link to Tutorialzine -- */
+
+.tz-link{
+    text-decoration: none;
+    color: #fff !important;
+    font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+    color: #da431c;
+}

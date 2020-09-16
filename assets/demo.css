@@ -1,0 +1,422 @@
+/*  Page styles  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+#skrollr-body {
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+
+
+/*  Styles for this example */
+
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+
+    height:80vh;
+    top:-80vh;
+}
+
+
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    height:100vh;
+    top:0;
+}
+
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+    height:80vh;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+
+/*  End of scrollr styles   */
+
+
+/*Intro*/
+
+#page-intro h1{
+    text-align: center;
+    color: #fff;
+    font: normal 60px 'Droid Serif', sans-serif;
+    padding-top: 24vh;
+}
+
+@media (max-width: 800px) {
+    #page-intro h1 {
+        font-size: 42px;
+        padding-top: 15vh;
+    }
+}
+
+#page-intro .btn{
+    color: #fff !important;
+    display: block;
+    margin: 40px auto;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 18px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/*Body Text*/
+
+
+.body-text{
+    padding: 140px 0;
+    background-color: #fff;
+    color: #25373C;
+    font-size: 18px;
+    text-align: center;
+}
+
+.body-text h2{
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+.body-text p{
+    width: 28%;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    color: #45636B;
+}
+
+
+@media (max-width: 900px){
+
+    .body-text p{
+        width: 100%;
+    }
+
+}
+
+/*Features List*/
+
+
+.features-list{
+    padding: 150px 0;
+    background-color: #fff;
+    color: #25373C;
+    font-size: 18px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.features-list h2{
+    font-size: 42px;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+.features-list div{
+    display: inline-block;
+    width: 30%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 45px;
+    box-shadow: 1px 1px 1px #ccc, 0 0 30px #eee inset;
+}
+
+.features-list div i{
+    font-size: 150px;
+    margin-bottom: 40px;
+    color: #50B575;
+}
+
+.features-list div h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #425F67;
+    font-weight: normal;
+}
+
+
+@media (max-width: 900px){
+
+    .features-list div{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/*About us*/
+
+.about-us{
+    padding: 150px 0;
+    background-color: #fff;
+    min-height: 120vh;
+    text-align: center;
+    color: #25373C;
+    font-size: 18px;
+}
+
+.about-us h2{
+    font-size: 42px;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+.about-us div{
+    text-align: center;
+    width: 25%;
+    margin: 30px 10px;
+    display: inline-block;
+}
+
+
+.about-us div img{
+    border-radius: 50%;
+    width: 60%;
+}
+
+.about-us a.attribution{
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: inherit;
+    width: 280px;
+    margin: 50px auto 10px;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 800px){
+
+    .about-us div{
+        width: 45%;
+        margin: 20px 0;
+    }
+
+}
+
+
+/*Gallery*/
+
+
+.gallery{
+    color: #221f51;
+    font: normal 24px sans-serif;
+    min-height: 300vh;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(white, #EEF6F9);
+}
+
+.scroll-pause{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    background: transparent;
+}
+
+
+.scroll-pause .row{
+    width: 200vw;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.scroll-pause .row div{
+    width: 11.5%;
+    height: 90%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.5%;
+    border-radius: 10px;
+}
+
+.scroll-pause .row div:first-child{
+    margin-left: 0.4%;
+}
+
+.scroll-pause .row div:last-child{
+    margin-right: 0.4%;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 55px;
+    overflow: hidden;
+}
+
+/* Footer left */
+
+footer .footer-left{
+    float: left;
+}
+
+footer h3{
+    color:  #5383d3;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+footer .footer-links{
+    color: #95A4A9;
+    margin: 22px 0 14px;
+    padding: 0;
+}
+
+footer .footer-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: #50B575;
+}
+
+footer .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer right */
+
+footer .footer-right{
+    float: right;
+    width: 100%;
+}
+
+/* The search form */
+
+footer form{
+    position: relative;
+}
+
+footer form input{
+    display: block;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #32383A;
+    width: 100%;
+    padding: 18px 50px 18px 18px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+}
+
+footer form input:focus{
+    border-color:#ccc;
+}
+
+/* Changing the placeholder color */
+
+footer form input::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+
+footer form input::-moz-placeholder {
+    opacity: 1;
+    color:  #5c666b;
+}
+
+footer form input:-ms-input-placeholder{
+    color:  #5c666b;
+}
+
+/* The magnify glass icon */
+
+footer form i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+
+    color: #d1d2d2;
+    font-size: 20px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1100px) {
+
+    footer .footer-left{
+        margin-bottom: 50px;
+    }
+
+    footer .footer-right{
+        float: left;
+        clear: left;
+    }
+
+}
+
+
