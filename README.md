@@ -14,7 +14,7 @@ A E Learning Website In PHP with Chat Feature through AJAX
 [Installing](#Installing)
 
 
-![Demo Video](https://j.gifs.com/xngwml.gif)
+![Demo Video](https://gifs.com/gif/xngwml)
 
 
 
