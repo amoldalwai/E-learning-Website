@@ -23,6 +23,7 @@ A E Learning Website In PHP with Chat Feature through AJAX ,includes multiple we
 - [x] Signup
 - [x] Login
 - [x] User Suggestions
+- [x] User Ratings and Reviews/Suggestions
 - [x] Buy Courses and Download it in PDF Format
 - [x] Chat with Admin <br/>
 ### For Admin
